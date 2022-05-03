@@ -13,5 +13,5 @@ footer{
 }
 
 .artistas{
-    display: flex !important;
+    display: flex;
 }
