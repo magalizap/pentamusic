@@ -7,11 +7,49 @@
     box-sizing: border-box;
 }
 
+header img{
+    width: 15vw !important;
+    height: 7vh !important;
+}
+
+.artist{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.filas{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+    height: 25vh;
+}
+
+.albums{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.podcast{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.mix{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    "artist"
+    "albums"
+    "podcast"
+    "mix";
+}
+
+
 footer{
     position: absolute;
     bottom: 0;
-}
-
-.artistas{
-    display: flex;
 }
