@@ -1,0 +1,55 @@
+/*HTML PLAYLIST*/
+
+.container-playlist{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+.grid-playlist{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+@media screen and (max-width: 900px) {
+    .container-playlist{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 0;
+    }
+    .grid-playlist{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container-playlist{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 0;
+    }
+    .grid-playlist{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .container-playlist{
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 0;
+    }
+    .grid-playlist{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+        margin-left: 50px;
+    }
+}

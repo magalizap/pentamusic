@@ -1,0 +1,64 @@
+/*HTML SHOP*/
+
+.grid-caja-shop{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+.instrumentos{
+    width: 225px;
+    height: 225px;
+    border-radius: 10px;
+}
+@media screen and (max-width:900px) {
+    .grid-caja-shop{
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+    .instrumentos{
+        width: 225px;
+        height: 225px;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width:600px) {
+    .grid-caja-shop{
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+    .instrumentos{
+        width: 180px;
+        height: 180px;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width:300px) {
+    .grid-caja-shop{
+        width: 55%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+    .instrumentos{
+        width: 155px;
+        height: 175px;
+        border-radius: 10px;
+    }
+}
