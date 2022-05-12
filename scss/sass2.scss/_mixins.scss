@@ -41,6 +41,7 @@
     @media screen and (max-width:900px) {
         display: $dis;
         grid-template-columns: repeat(2, 1fr);
+        margin-left: 15%;
     }
     @media screen and (max-width:600px) {
         display: $dis;
@@ -56,5 +57,51 @@
         }
     }
 
+    @mixin grids-podcast{
+        display: $dis;
+        margin: 1rem;
+        grid-template-columns: repeat(2,1fr);
+        gap: 3rem;
+        .grid-albums{
+            @extend .ids-itiel-agape-alex;
+        }
+        @media screen and (max-width:900px) {
+            display: $dis;
+            grid-template-columns: repeat(2, 1fr);
+            
+        }
+        @media screen and (max-width:600px) {
+            display: $dis;
+            grid-template-columns: repeat(1, 1fr);
+        }
+        @media screen and (max-width:380px) {
+            display: $dis;
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 
+@mixin grids-mix {
+    display: $dis;
+    margin: $margin-left ;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3em;
+    .grid-mix{
+        @extend .daily-mix-1-daily-mix-2-daily-mix-3-mix-country-mix-pop-mix-latino-mix-melanco-mix-90;
+    }
+    @media screen and (max-width:900px) {
+        display: $dis;
+        margin-left: 15%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width:600px) {
+        display: $dis;
+        margin-left: 3%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width:380px) {
+        display: $dis;
+        margin-left: 3rem;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 

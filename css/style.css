@@ -2,7 +2,23 @@
   display: flex;
   justify-content: center; }
 
+.ids-itiel-agape-alex, .grid-podcast .grid-albums {
+  display: flex;
+  justify-content: center; }
+
+.daily-mix-1-daily-mix-2-daily-mix-3-mix-country-mix-pop-mix-latino-mix-melanco-mix-90, .grid-mix .grid-mix {
+  display: flex;
+  justify-content: center; }
+
 .one-direction-twice-carpenter-r5, .grid-albums .grid-albums {
+  display: flex;
+  justify-content: center; }
+
+.ids-itiel-agape-alex, .grid-podcast .grid-albums {
+  display: flex;
+  justify-content: center; }
+
+.daily-mix-1-daily-mix-2-daily-mix-3-mix-country-mix-pop-mix-latino-mix-melanco-mix-90, .grid-mix .grid-mix {
   display: flex;
   justify-content: center; }
 
@@ -39,7 +55,8 @@
   @media screen and (max-width: 900px) {
     .grid-albums {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); } }
+      grid-template-columns: repeat(2, 1fr);
+      margin-left: 15%; } }
   @media screen and (max-width: 600px) {
     .grid-albums {
       display: grid;
@@ -57,167 +74,40 @@
   display: grid;
   margin: 1rem;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3em; }
-  .grid-podcast .ids {
-    display: flex;
-    justify-content: center; }
-  .grid-podcast .itiel {
-    display: flex;
-    justify-content: center; }
-  .grid-podcast .agape {
-    display: flex;
-    justify-content: center; }
-  .grid-podcast .alex {
-    display: flex;
-    justify-content: center; }
-
-@media screen and (max-width: 900px) {
-  .grid-podcast {
-    display: grid;
-    margin: 0 40px 0 40px;
-    grid-template-columns: repeat(1, 1fr); }
-  .ids {
-    display: flex;
-    justify-content: center; }
-  .itiel {
-    display: flex;
-    justify-content: center; }
-  .agape {
-    display: flex;
-    justify-content: center; }
-  .alex {
-    display: flex;
-    justify-content: center; } }
-
-@media screen and (max-width: 600px) {
-  .grid-podcast {
-    display: grid;
-    margin: 0 40px 0 40px;
-    grid-template-columns: repeat(1, 1fr); }
-  .ids {
-    display: flex;
-    justify-content: center; }
-  .itiel {
-    display: flex;
-    justify-content: center; }
-  .agape {
-    display: flex;
-    justify-content: center; }
-  .alex {
-    display: flex;
-    justify-content: center; } }
-
-@media screen and (max-width: 380px) {
-  .grid-podcast {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); }
-  .ids {
-    display: flex;
-    justify-content: center; }
-  .itiel {
-    display: flex;
-    justify-content: center; }
-  .agape {
-    display: flex;
-    justify-content: center; }
-  .alex {
-    display: flex;
-    justify-content: center; } }
+  gap: 3rem; }
+  @media screen and (max-width: 900px) {
+    .grid-podcast {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (max-width: 600px) {
+    .grid-podcast {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); } }
+  @media screen and (max-width: 380px) {
+    .grid-podcast {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); } }
 
 .grid-mix {
   display: grid;
-  margin: 0 40px 40px 40px;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px; }
-  .grid-mix .daily-mix-1 {
-    display: flex;
-    justify-content: center; }
-  .grid-mix .daily-mix-2 {
-    display: flex;
-    justify-content: center; }
-  .grid-mix .daily-mix-3 {
-    display: flex;
-    justify-content: center; }
-  .grid-mix .mix-country {
-    display: flex;
-    justify-content: center; }
-  .grid-mix .mix-pop {
-    display: flex;
-    justify-content: center; }
-  .grid-mix .mix-latino {
-    display: flex;
-    justify-content: center; }
-
-@media screen and (max-width: 900px) {
-  .grid-mix {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
-  .daily-mix-1 {
-    display: flex;
-    justify-content: center; }
-  .daily-mix-2 {
-    display: flex;
-    justify-content: center; }
-  .daily-mix-3 {
-    display: flex;
-    justify-content: center; }
-  .mix-country {
-    display: flex;
-    justify-content: center; }
-  .mix-pop {
-    display: flex;
-    justify-content: center; }
-  .mix-latino {
-    display: flex;
-    justify-content: center; } }
-
-@media screen and (max-width: 600px) {
-  .grid-mix {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); }
-  .daily-mix-1 {
-    display: flex;
-    justify-content: center; }
-  .daily-mix-2 {
-    display: flex;
-    justify-content: center; }
-  .daily-mix-3 {
-    display: flex;
-    justify-content: center; }
-  .mix-country {
-    display: flex;
-    justify-content: center; }
-  .mix-pop {
-    display: flex;
-    justify-content: center; }
-  .mix-latino {
-    display: flex;
-    justify-content: center; } }
-
-@media screen and (max-width: 380px) {
-  .grid-mix {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px;
-    justify-content: center; }
-  .daily-mix-1 {
-    display: flex;
-    justify-content: center; }
-  .daily-mix-2 {
-    display: flex;
-    justify-content: center; }
-  .daily-mix-3 {
-    display: flex;
-    justify-content: center; }
-  .mix-country {
-    display: flex;
-    justify-content: center; }
-  .mix-pop {
-    display: flex;
-    justify-content: center; }
-  .mix-latino {
-    display: flex;
-    justify-content: center; } }
+  margin: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3em; }
+  @media screen and (max-width: 900px) {
+    .grid-mix {
+      display: grid;
+      margin-left: 15%;
+      grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (max-width: 600px) {
+    .grid-mix {
+      display: grid;
+      margin-left: 3%;
+      grid-template-columns: repeat(2, 1fr); } }
+  @media screen and (max-width: 380px) {
+    .grid-mix {
+      display: grid;
+      margin-left: 3rem;
+      grid-template-columns: repeat(1, 1fr); } }
 
 .imagen-fondo {
   height: 100vh;
@@ -380,7 +270,23 @@
   display: flex;
   justify-content: center; }
 
+.ids-itiel-agape-alex, .grid-podcast .grid-albums {
+  display: flex;
+  justify-content: center; }
+
+.daily-mix-1-daily-mix-2-daily-mix-3-mix-country-mix-pop-mix-latino-mix-melanco-mix-90, .grid-mix .grid-mix {
+  display: flex;
+  justify-content: center; }
+
 .one-direction-twice-carpenter-r5, .grid-albums .grid-albums {
+  display: flex;
+  justify-content: center; }
+
+.ids-itiel-agape-alex, .grid-podcast .grid-albums {
+  display: flex;
+  justify-content: center; }
+
+.daily-mix-1-daily-mix-2-daily-mix-3-mix-country-mix-pop-mix-latino-mix-melanco-mix-90, .grid-mix .grid-mix {
   display: flex;
   justify-content: center; }
 
@@ -422,6 +328,22 @@ h1 {
   display: flex;
   justify-content: center; }
 
+.ids-itiel-agape-alex, .grid-podcast .grid-albums {
+  display: flex;
+  justify-content: center; }
+
+.daily-mix-1-daily-mix-2-daily-mix-3-mix-country-mix-pop-mix-latino-mix-melanco-mix-90, .grid-mix .grid-mix {
+  display: flex;
+  justify-content: center; }
+
 .one-direction-twice-carpenter-r5, .grid-albums .grid-albums {
+  display: flex;
+  justify-content: center; }
+
+.ids-itiel-agape-alex, .grid-podcast .grid-albums {
+  display: flex;
+  justify-content: center; }
+
+.daily-mix-1-daily-mix-2-daily-mix-3-mix-country-mix-pop-mix-latino-mix-melanco-mix-90, .grid-mix .grid-mix {
   display: flex;
   justify-content: center; }

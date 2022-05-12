@@ -5,239 +5,28 @@
 
 
 
-                                   //*ARTISTS*//
+//*ARTISTS*//
 
 .grid-artist{
     @include grids-artist ($dis, $margin-left, $columnas, $espacio, $ancho);
 }
 
-                                       //*ALBUMS*//
+//*ALBUMS*//
+
 .grid-albums{
     @include grids-albums;
 }
 
-                                //*PODCAST*//
+//*PODCAST*//
 
 .grid-podcast{
-    display: grid;
-    margin: 1rem;
-    grid-template-columns:repeat(2,1fr) ;
-    gap:3em;
-    .ids{
-        display: flex;
-        justify-content: center;
-    }
-    .itiel{
-        display: flex;
-        justify-content: center;
-    }
-    .agape{
-        display: flex;
-        justify-content: center;
-    }
-    .alex{
-        display: flex;
-        justify-content: center;
-    }
+    @include grids-podcast;
 }
 
-@media screen and (max-width:900px){
-    .grid-podcast{
-        display: grid;
-        margin: 0 40px 0 40px;
-        grid-template-columns:repeat(1,1fr);
-    }
-    .ids{
-        display: flex;
-        justify-content: center;
-    }
-    .itiel{
-        display: flex;
-        justify-content: center;
-    }
-    .agape{
-        display: flex;
-        justify-content: center;
-    }
-    .alex{
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width:600px){
-    .grid-podcast{
-        display: grid;
-        margin: 0 40px 0 40px;
-        grid-template-columns:repeat(1,1fr);
-    }
-    .ids{
-        display: flex;
-        justify-content: center;
-    }
-    .itiel{
-        display: flex;
-        justify-content: center;
-    }
-    .agape{
-        display: flex;
-        justify-content: center;
-    }
-    .alex{
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width:380px){
-    .grid-podcast{
-        display: grid;
-        grid-template-columns:repeat(1,1fr);
-    }
-    .ids{
-
-        display: flex;
-        justify-content: center;
-    }
-    .itiel{
-        display: flex;
-        justify-content: center;
-    }
-    .agape{
-        display: flex;
-        justify-content: center;
-    }
-    .alex{
-        display: flex;
-        justify-content: center;
-    }
-}
-
-                               //*MIX*//
+//*MIX*//
 
 .grid-mix{
-    display: grid;
-    margin: 0 40px 40px 40px;
-    grid-template-columns:repeat(3,1fr);
-    gap: 20px;
-    .daily-mix-1{
-        display: flex;
-        justify-content: center;
-    }
-    .daily-mix-2{
-        display: flex;
-        justify-content: center;
-    }
-    .daily-mix-3{
-        display: flex;
-        justify-content: center;
-    }
-    .mix-country{
-        display: flex;
-        justify-content: center;
-    }
-    .mix-pop{
-        display: flex;
-        justify-content: center;
-    }
-    .mix-latino{
-        display: flex;
-        justify-content: center;
-    }
+    @include grids-mix;
 }
 
-@media screen and (max-width:900px) {
-    .grid-mix{
-        display: grid;
-        grid-template-columns:repeat(2,1fr);
-    }
-    
-    .daily-mix-1{
-        display: flex;
-        justify-content: center;
-    }
-    .daily-mix-2{
-        display: flex;
-        justify-content: center;
-    }
-    .daily-mix-3{
-        display: flex;
-        justify-content: center;
-    }
-    .mix-country{
-        display: flex;
-        justify-content: center;
-    }
-    .mix-pop{
-        display: flex;
-        justify-content: center;
-    }
-    .mix-latino{
-        display: flex;
-        justify-content: center;
-    }
-}
-@media screen and (max-width:600px) {
-    .grid-mix{
-        display: grid;
-        grid-template-columns:repeat(2,1fr);
-    }
-    
-    .daily-mix-1{
-        display: flex;
-        justify-content: center;
-    }
-    .daily-mix-2{
-        display: flex;
-        justify-content: center;
-    }
-    .daily-mix-3{
-        display: flex;
-        justify-content: center;
-    }
-    .mix-country{
-        display: flex;
-        justify-content: center;
-    }
-    .mix-pop{
-        display: flex;
-        justify-content: center;
-    }
-    .mix-latino{
-        display: flex;
-        justify-content: center;
-    }
-}
-@media screen and (max-width:380px) {
-    .grid-mix{
-        display: grid;
-        grid-template-columns:repeat(1,1fr);
-        gap: 20px;
-        justify-content: center;
-    }
-    
-    .daily-mix-1{
-        display: flex;
-        justify-content: center;
-    }
-    .daily-mix-2{
-        display: flex;
-        justify-content: center;
-    }
-    .daily-mix-3{
-        display: flex;
-        justify-content: center;
-    }
-    .mix-country{
-        display: flex;
-        justify-content: center;
-    }
-    .mix-pop{
-        display: flex;
-        justify-content: center;
-    }
-    .mix-latino{
-        display: flex;
-        justify-content: center;
-    }
-}
+
