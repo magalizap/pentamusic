@@ -6,18 +6,6 @@
   display: flex;
   justify-content: center; }
 
-section .img {
-  height: 100vh;
-  width: 98vw;
-  position: relative; }
-
-section h1 {
-  font-size: 3rem;
-  position: absolute;
-  color: #ffffff;
-  top: 50%;
-  left: 50%; }
-
 .grid-artist {
   display: grid;
   margin-left: 2rem;
@@ -231,6 +219,10 @@ section h1 {
     display: flex;
     justify-content: center; } }
 
+.imagen-fondo {
+  height: 100vh;
+  width: 100%; }
+
 /*HTML LOGIN*/
 .box {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -406,12 +398,22 @@ h1:hover {
   color: orange !important; }
 
 h2 {
+  margin-top: 5em;
+  margin-bottom: 1em;
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #ffff;
-  margin: 200px 0 50px 0; }
+  font-size: 3rem; }
 
 h1 {
+  margin-top: 5em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffff;
+  font-size: 3rem; }
+
+.h1 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #ffff; }
