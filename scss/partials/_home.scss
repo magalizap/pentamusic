@@ -1,176 +1,42 @@
-*{
-    padding: 0%;
-    margin: 0%;
+@import "../variables/variables";
+@import "../sass2.scss/mixins";
+@import "../sass2.scss/extend";
+
+section{
+    .img{
+        height: 100vh;
+        width: 98vw;
+        position: relative;
+    }
+    h1{
+        font-size: 3rem;
+        position: absolute;
+        color: #ffffff;
+        top:50%;
+        left:50%;
+    }
 }
 
-a:hover{
-    color: orange !important;
-}
-h1:hover{
-    color: orange !important;
-}
-h1{
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #ffff;
-    margin: 200px 0 50px 0;
-}
+
+
                                    //*ARTISTS*//
 
 .grid-artist{
-    margin: 0 40px 0 40px;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 20px;
-    .artist{
-        border-radius: 20px;
-    }
-}
-
-@media screen and (max-width:900px) {
-    .grid-artist{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 20px;
-    }
-    .artist{
-        border-radius: 20px;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .grid-artist{
-        margin: 15px;
-        padding: 20px 0;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 5px;
-    }
-    .artist{
-        border-radius: 20px;
-    }
-}
-
-@media screen and (max-width:320px) {
-    .grid-artist{
-        margin: 70px;
-        padding: 10px 0;
-        gap: 20px;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .artist{
-        border-radius: 20px;
-        display: flex;
-        justify-content: center;
-    }
+    @include grids-artist ($dis, $margin-left, $columnas, $espacio, $ancho);
 }
 
                                        //*ALBUMS*//
-
 .grid-albums{
-    display: grid;
-    margin: 0 40px 0 40px;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    .one-direction{
-        display: flex;
-        justify-content: center;
-    }
-    .twice{
-        display: flex;
-        justify-content: center;
-    }
-    .carpenter{
-        display: flex;
-        justify-content: center;
-    }
-    .r5{
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width:900px){
-    .grid-albums{
-        display: grid;
-        margin: 0 40px 0 40px;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-    .one-direction{
-        display: flex;
-        justify-content: center;
-    }
-    .twice{
-        display: flex;
-        justify-content: center;
-    }
-    .carpenter{
-        display: flex;
-        justify-content: center;
-    }
-    .r5{
-        display: flex;
-        justify-content: center;
-    }
-}
-@media screen and (max-width:600px){
-    .grid-albums{
-        display: grid;
-        margin: 0 25px 0 30px;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-    }
-    .one-direction{
-        display: flex;
-        justify-content: center;
-    }
-    .twice{
-        display: flex;
-        justify-content: center;
-    }
-    .carpenter{
-        display: flex;
-        justify-content: center;
-    }
-    .r5{
-        display: flex;
-        justify-content: center;
-    }
-}
-@media screen and (max-width:320px){
-    .grid-albums{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-        justify-content: center;
-    }
-    .one-direction{
-        display: flex;
-        justify-content: center;
-    }
-    .twice{
-        display: flex;
-        justify-content: center;
-    }
-    .carpenter{
-        display: flex;
-        justify-content: center;
-    }
-    .r5{
-        display: flex;
-        justify-content: center;
-    }
+    @include grids-albums;
 }
 
                                 //*PODCAST*//
 
 .grid-podcast{
     display: grid;
-    margin: 0 40px 0 40px;
+    margin: 1rem;
     grid-template-columns:repeat(2,1fr) ;
-    gap:40px;
+    gap:3em;
     .ids{
         display: flex;
         justify-content: center;
@@ -237,7 +103,7 @@ h1{
     }
 }
 
-@media screen and (max-width:320px){
+@media screen and (max-width:380px){
     .grid-podcast{
         display: grid;
         grid-template-columns:repeat(1,1fr);
@@ -356,7 +222,7 @@ h1{
         justify-content: center;
     }
 }
-@media screen and (max-width:320px) {
+@media screen and (max-width:380px) {
     .grid-mix{
         display: grid;
         grid-template-columns:repeat(1,1fr);

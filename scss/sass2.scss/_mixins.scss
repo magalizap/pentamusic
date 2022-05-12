@@ -1,0 +1,60 @@
+@import "../variables/variables";
+@import "../sass2.scss/extend";
+
+
+@mixin grids-artist ($dis, $margin-left, $columnas, $espacio, $ancho) {
+    display: $dis;
+    margin-left: $margin-left;
+    grid-template-columns: repeat($columnas, 1fr);
+    gap: $espacio;
+    .artist {
+        border-radius: 1em;
+    }
+    @media screen and (max-width:900px) {
+        display: $dis;
+        grid-template-columns: repeat(4, 1fr);
+        gap: $espacio;
+    }
+    @media screen and (max-width:600px) {
+        display: $dis;
+        grid-template-columns: repeat(3,1fr);
+        gap: $espacio;
+    }
+    @media screen and (max-width:380px) {
+        display: $dis;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 5rem;
+        .artist{
+            width: $ancho;
+        }
+    }
+}
+
+@mixin grids-albums {
+    display: $dis;
+    margin: $margin-left ;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1em;
+    .grid-albums{
+        @extend .one-direction-twice-carpenter-r5;
+    }
+    @media screen and (max-width:900px) {
+        display: $dis;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media screen and (max-width:600px) {
+        display: $dis;
+        grid-template-columns: repeat(2, 1fr);
+        gap: $espacio;
+        margin-left: 1rem;
+    }
+    @media screen and (max-width:380px) {
+        display: $dis;
+        grid-template-columns: repeat(1, 1fr);
+        gap:$espacio;
+        margin-left: 3rem;
+        }
+    }
+
+
+
