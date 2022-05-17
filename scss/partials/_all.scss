@@ -8,7 +8,12 @@
     margin: 0%;
 }
 
-
+body{
+    background-color: #191c1f;
+    position: relative;
+    padding-bottom: 10rem;
+    min-height: 100vh;
+}
 a:hover{
     color: $color !important;
 }
@@ -18,6 +23,7 @@ h2:hover{
 h1:hover{
     color: $color !important;
 }
+
 
 
 h2{
@@ -44,3 +50,55 @@ h1{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #ffff;
 }
+
+.pie-pagina{
+    width: 100%;
+    background-color: #161719;
+    position:absolute;
+    bottom: 0;
+    padding: 2em 0;
+    display: flex;
+    justify-content: center;
+    .grupo-1{
+        width: 50%;
+        max-width: 1200px;
+        margin: auto;
+        .red-social{
+            a{
+                display: inline-block;
+                text-decoration: none;
+                width: 45px;
+                height: 45px;
+                line-height: 45px;
+                color: #ffff;
+                background-color: #0d2033;
+                text-align: center;
+            }
+        }
+    }
+    .grupo-2{
+        margin: auto;
+        text-align: center;
+        color:#ffff ;
+        small{
+            font-size: 15px;
+        }
+    }
+    @media screen and (max-width:800px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+    @media screen and (max-width:380px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        .grupo-1{
+            width: 55%;
+            margin: auto;
+        }
+    }
+}
+

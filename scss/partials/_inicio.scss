@@ -1,5 +1,55 @@
 
-.imagen-fondo{
-    height: 100vh;
-    width: 100%;
+.bg-image{
+    background-image: url("../img/imagen-fondo-concierto.jpg");
+    background-size: 100vw 100vh;
+}
+
+.title{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 90px;
+    margin-top: 2em;
+}
+
+.start{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.color-de-fondo{
+    background-color: #161719;
+    width: 245px;
+    height: 60px;
+    font-size: 2em;
+    font-weight: bold;
+}
+.up{
+    position: fixed;
+    border-radius: 7px;
+    width: 50px;
+    height: 50px;
+    background-color: #198754;
+    color: #161719;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;line-height: 50px;
+
+}
+
+@media screen and (max-width:380px) {
+    .title{
+        font-family: 'Bebas Neue', cursive;
+        font-size: 65px;
+        margin-top: 2em;
+    }
+    .color-de-fondo{
+        background-color: #161719;
+        width: 165px;
+        height: 60px;
+        font-size: 1em;
+        font-weight: bold;
+    }
+    
 }
