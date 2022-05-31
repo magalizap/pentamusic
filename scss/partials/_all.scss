@@ -18,34 +18,41 @@ a:hover{
     color: $color !important;
 }
 
-
+.search{
+    color: #d08540;
+    border-color: #d08540;
+}
+.search:hover{
+    background-color: #d08540;
+    color: #ffff;
+}
 
 
 h2{
-    margin-top: 5em ;
+    color: #d08540;
+    margin-top: 2em ;
     margin-bottom: 1em;
     text-align: center;
     font-family: 'Bebas Neue',capital letter;
-    color: #ffff;
-    font-size: 3rem;
+    font-size: 4.5rem;
 }
 
 
 h1{
-    margin-top: 5em ;
-    margin-bottom: 1em;
+    color: #d08540;
+    margin-top: 3em ;
+    margin-bottom: 3rem;
     text-align: center;
     font-family: 'Bebas Neue', capital letter;
-    color: #ffff;
-    font-size: 3rem;
+    font-size: 4.5rem;
 }
 
 .h1{
+    color: #d08540;
     text-align: center;
     margin-top: 1em;
     font-size: 4rem;
     font-family: 'Bebas Neue',capital letter;
-    color: #ffff;
 }
 
 .pie-pagina{

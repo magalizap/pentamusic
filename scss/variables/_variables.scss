@@ -1,7 +1,10 @@
-$color: orange;
+$color: #d08540;
 $color-text: #ffffff;
 $margin-left: 4rem;
-$columnas: 6;
 $dis: grid;
+$display: flex;
+$direction: column;
+$centrado-alineado: center;
+$margin-bottom: 35px;
+$columns:repeat(2,1fr);
 $espacio: 2em;
-$ancho: 70%

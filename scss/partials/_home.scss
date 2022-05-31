@@ -3,27 +3,111 @@
 @import "../sass2.scss/extend";
 
 
-//*ARTISTS*//
 
 .grid-artist{
-    @include grids-artist ($dis, $margin-left, $columnas, $espacio, $ancho);
+    @include grids ($display, $direction, $centrado-alineado);
+    .artist{
+        margin-bottom: $margin-bottom;
+        border-radius: 10px;
+    }
 }
-
-//*ALBUMS*//
-
 .grid-albums{
-    @include grids-albums;
+    @include grids ($display, $direction, $centrado-alineado);
+    .album{
+        margin-bottom: $margin-bottom;
+    }
 }
-
-//*PODCAST*//
-
 .grid-podcast{
-    @include grids-podcast;
+    @include grids ($display, $direction, $centrado-alineado);
+    .podcast{
+        margin: 10px 20px;
+    }
+}
+.grid-mix{
+    @include grids ($display, $direction, $centrado-alineado);
+    .mix{
+        margin-bottom: $margin-bottom;
+    }
+    
 }
 
-//*MIX*//
 
-.grid-mix{
-    @include grids-mix;
+
+@media screen and (min-width:480px) {
+    .grid-artist{
+        display:$dis;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: $margin-left;
+    }
+}
+
+@media screen and (min-width:680px) {
+    .grid-artist{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .grid-albums{
+        display: $dis;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: $margin-left;
+    }
+    .grid-podcast{
+        display: $dis;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .grid-mix{
+        display: $dis;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: $margin-left;
+    }
+}
+
+@media screen and (min-width:900px) {
+    .grid-artist{
+        margin-left: 7rem;
+    }
+    .grid-albums{
+        margin-left: 8rem;
+    }
+    .grid-mix{
+        margin-left: 8rem;
+    }
+}
+@media screen and (min-width:1024px) {
+    .grid-artist{
+        grid-template-columns: repeat(4,1fr);
+        margin-left: $margin-left;
+    }
+    .grid-albums{
+        margin-left: 10rem;
+        gap: 1em;
+    }
+    .grid-podcast{
+        margin: 3rem;
+    }
+    .grid-mix{
+        margin-left: 10rem;
+        gap: 3em;
+    }
+}
+@media screen and (min-width:1200px) {
+    .grid-artist{
+        grid-template-columns: repeat(6,1fr);
+        margin-left: $margin-left;
+        gap: $espacio;
+    }
+    .grid-albums{
+        grid-template-columns: repeat(4,1fr);
+        margin-left: $margin-left;
+        gap: 1em;
+    }
+    .grid-podcast{
+        margin: 3rem;
+        gap: 3rem;
+    }
+    .grid-mix{
+        grid-template-columns: repeat(4,1fr);
+        margin-left: $margin-left;
+        gap: 3em;
+    }
 }
 

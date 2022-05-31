@@ -42,7 +42,7 @@
                         </ul>
                         <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
+                            <button class="search btn btn-outline-success" type="submit">Search</button>
                         </form>
                         </div>
                     </div>
@@ -51,13 +51,30 @@
         </header>
 
 
-        <main>
-            <form class="my-5 box" action="login.html" method="post">
-                <h1 class="h1">Login</h1>
-                <input type="text" name="" placeholder="Username">
-                <input type="password" name="" placeholder="Password">
-                <input type="submit" name="" placeholder="Login">
-            </form>
+        <main class="login">
+            <img class="img-login" src="../img/foto-login.jpg" alt="foto-login">
+            <div class="ingresar">
+                <form class="formulario">
+                    <div>
+                        <h1 class="welcome">Welcome!</h1>
+                        <p class="sesion">Inicia sesión con tu cuenta</p>
+                    </div>
+                    <div class="input">
+                        <label for="Username">Username</label>
+                        <input type="text" placeholder="Ingresa tu nombre" >
+                    </div>
+                    <div class="input">
+                        <label for="password">Password</label>
+                        <input type="password"  placeholder="Ingresa tu contraseña" >
+                    </div>
+                    <div class="password-olvidada">
+                        <a href="../pages/login.html">¿Olvidaste tu contraseña?</a>
+                    </div>
+                    <div class="imput">
+                        <button class="submit btn btn-outline-success" type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
         </main>
 
 
