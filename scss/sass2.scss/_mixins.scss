@@ -5,6 +5,9 @@
     display: $display;
     flex-direction: $direction;
     align-items: $centrado-alineado;
+    .musica{
+        @extend .artist-albums-mix;
+    }
 }
 
 

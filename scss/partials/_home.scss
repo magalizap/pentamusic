@@ -7,15 +7,11 @@
 .grid-artist{
     @include grids ($display, $direction, $centrado-alineado);
     .artist{
-        margin-bottom: $margin-bottom;
         border-radius: 10px;
     }
 }
 .grid-albums{
     @include grids ($display, $direction, $centrado-alineado);
-    .album{
-        margin-bottom: $margin-bottom;
-    }
 }
 .grid-podcast{
     @include grids ($display, $direction, $centrado-alineado);
@@ -25,13 +21,8 @@
 }
 .grid-mix{
     @include grids ($display, $direction, $centrado-alineado);
-    .mix{
-        margin-bottom: $margin-bottom;
-    }
     
 }
-
-
 
 @media screen and (min-width:480px) {
     .grid-artist{

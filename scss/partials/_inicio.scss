@@ -1,20 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import "../variables/variables";
 
 .bg-image{
     background-image: url("../img/imagen-fondo-concierto.jpg");
-    background-size: 100vw 100vh;
+    background-size: 100vw 100%;
 }
 
+
 .title{
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+    font-family: $text;
     font-size: 90px;
     margin-top: 2em;
     color: #ffff;
 }
 
 .start{
-    display: flex;
+    display: $display;
     justify-content: center;
-    align-items: center;
+    align-items: $centrado-alineado;
     text-decoration: none;
 }
 
