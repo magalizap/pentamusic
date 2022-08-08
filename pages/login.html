@@ -55,18 +55,18 @@
         <main class="login contenedor">
             <img class="img-login" src="../img/foto-login.jpg" alt="foto-login">
             <div class="ingresar">
-                <form class="formulario">
+                <form class="formulario" id="form">
                     <div>
                         <h1 class="welcome">Welcome!</h1>
                         <p class="sesion">Inicia sesión con tu cuenta</p>
                     </div>
                     <div class="input">
                         <label for="Username">Username</label>
-                        <input type="text" placeholder="Ingresa tu nombre" >
+                        <input type="text" id="user" placeholder="Ingresa tu nombre de usuario" required>
                     </div>
                     <div class="input">
                         <label for="password">Password</label>
-                        <input type="password"  placeholder="Ingresa tu contraseña" >
+                        <input type="password" id="pass" placeholder="Ingresa tu contraseña" required>
                     </div>
                     <div class="password-olvidada">
                         <a href="../pages/login.html">¿Olvidaste tu contraseña?</a>
@@ -98,11 +98,13 @@
         </footer>
 
 
-
+    <script src="../js/script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" 
     crossorigin="anonymous">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.24/dist/sweetalert2.all.min.js"></script>
+
 </body>
 
 </html>

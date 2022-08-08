@@ -58,7 +58,7 @@
         .card-button:hover {
         border: 1px solid  $color;
         background-color:  $color;
-    }
+        }
     
     }
 }
@@ -82,10 +82,20 @@
 
 
 @media screen and (min-width:900px) {
+    .buscador{
+        display: flex;
+        justify-content: end;
+    }.buscar{
+        width: 300px;
+    }
     .grid-shop{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         margin: $margin-left;
         gap: 5em;
     }
+
 }
+
+
+
