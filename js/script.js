@@ -33,7 +33,7 @@ const mostrarDatos = (usuarios) =>{
         
         Swal.fire({
             title: `Bienvenido/a ${username}!`,
-
+            
           })
 
     })
